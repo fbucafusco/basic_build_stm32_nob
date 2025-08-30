@@ -1,4 +1,4 @@
-Example of building a SMT32 project using [nob.h](https://github.com/tsoding/nob.h).
+Example of building a STM32 project using [nob.h](https://github.com/tsoding/nob.h).
 It is based on [this project](https://github.com/fbucafusco/basic_build_stm32_bash) where I did the same using bash.
 
 # Usage
@@ -10,7 +10,7 @@ gcc mk.c -o mk
 
 # Install ARM Toolchain
 
-You can install the ARM GNU Toolchain either locally (for this project only) or system-wide (for all users). Choose the method that best fits your needs:
+You can install the ARM GNU Toolchain either locally (for this project only) or system-wide. Choose the method that best fits your needs:
 
 ## Option 1: Local Installation (Recommended for quick setup)
 

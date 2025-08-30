@@ -166,7 +166,7 @@ int main(int argc, char **argv)
         nob_sb_append_cstr(&sb, "_cpp.o");
         nob_sb_append_null(&sb);
 
-        cmd_append(&cmd, COMPILER_CPP, "-v",  "-c", cpp_files[i],   CPPFLAGS , MCU_FLAGS, OPTIMIZATION_FLAGS , INCLUDES ,  "-o", sb.items );
+        cmd_append(&cmd, COMPILER_CPP, "-c", cpp_files[i],   CPPFLAGS , MCU_FLAGS, OPTIMIZATION_FLAGS , INCLUDES ,  "-o", sb.items );
         if (!cmd_run(&cmd)) return 1;
 
         obj_files[obj_files_count++] = sb.items;
